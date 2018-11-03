@@ -16,10 +16,15 @@ for i in range(1,101):
 #输入一个字符串返回满足以下条件的字符串
 #如果字符串长度大于 3，添加 ‘ing’ 到字符串的末尾
 # 如果字符串是以 ‘ing’ 结尾，就在末尾添加 ‘ly’
+# 如果字符串长度小于 3，返回原字符串
 str = input("输入一个字符串:")
-if len(str) > 3:
+if len(str) >= 3:
     if str.endswith('ing'):
-        print(str + 'ly')
+        str += 'ly'
     else:
-        print(str + 'ing')
+        str += 'ing'
+else:
+    pass
+print(str)
+# 判断回文
     
