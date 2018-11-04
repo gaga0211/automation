@@ -29,3 +29,9 @@ print(str)
 
 
 # 判断回文 回文：62426 为回文数字
+s = input("请输入：")
+a = reversed(list(s))
+if list(a) == list(s):
+    print("yes")
+else:
+    print("no")
