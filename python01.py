@@ -1,3 +1,5 @@
+#!/usr/bin/env python3 
+# -*- coding: utf-8 -*-
 import math
 
 # def quadratic(a, b, c):
@@ -8,7 +10,7 @@ import math
 # x1,x2 = quadratic(2,8,4)
 # print('x1,x2',x1,x2)
 
-# #打印从1到100数字中所有能被3整除，又能被5整除的数字有哪些
+#打印从1到100数字中所有能被3整除，又能被5整除的数字有哪些
 # for i in range(1,101):
 #     if i % 3 == 0 and i % 5 == 0:
 #         print(i)
@@ -82,11 +84,41 @@ import math
 # print(c)
 
 #x^2
-def power(x,n):
-    s = 1
-    while n > 0:
-        n = n - 1
-        s = s * x
-    return s
-a = power(8,2)
-print(a)
+# def power(x,n):
+#     s = 1
+#     while n > 0:
+#         n = n - 1
+#         s = s * x
+#     return s
+# a = power(8,2)
+# print(a)
+
+# g = [x * x for x in range(10)]
+# for n in g:
+#     print(n)
+
+# def add(x, y, f):
+#     return f(x) + f(y)
+# print(add(-9,30,abs))
+
+# def f(x):
+#     return x * x
+# r = map(f,[1,2,3,4,5,6,7,8,9])
+# print(list(r))
+
+import sys
+
+def test():
+    args = sys.argv
+    if len(args)==1:
+        print('Hello, world!')
+    elif len(args)==2:
+        print('Hello, %s!' % args[1])
+    else:
+        print('Too many arguments!')
+
+if __name__=='__main__':
+    test()
+
+result = sys.argv[0]
+print(result)
