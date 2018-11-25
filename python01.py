@@ -108,17 +108,28 @@ import math
 
 import sys
 
-def test():
-    args = sys.argv
-    if len(args)==1:
-        print('Hello, world!')
-    elif len(args)==2:
-        print('Hello, %s!' % args[1])
-    else:
-        print('Too many arguments!')
+# def test():
+#     args = sys.argv
+#     if len(args)==1:
+#         print('Hello, world!')
+#     elif len(args)==2:
+#         print('Hello, %s!' % args[1])
+#     else:
+#         print('Too many arguments!')
 
-if __name__=='__main__':
-    test()
+# if __name__=='__main__':
+#     test()
 
-result = sys.argv[0]
-print(result)
+# result = sys.argv[0]
+# print(result)
+
+#面向对象编程
+class Student(object):
+    def __init__(self,name,score):
+        self.name = name
+        self.score = score
+def print_score(self):
+        print('%s: %s' % (self.name, self.score))
+a = Student('Bart Simpson', 59)
+b = Student('Lisa Simpson', 87)
+
